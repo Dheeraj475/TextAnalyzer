@@ -130,7 +130,7 @@ export default function Textcomp(props) {
           <h2>{props.heading}</h2>
           <textarea  style={{color:props.mode === "light"?"black":"white",background:props.mode === "light"?"white":"#1c1520"}} className="form-control"  value={text} id="myText" onChange={handleChange} rows="8"  placeholder="Enter your text"></textarea>
         </div>
-        <button disabled={text.length===0} style={{cursor: text.length===0 ? "not-allowed" : "pointer"}} className="btn btn-sm btn-outline-primary rounded-pill my-2" onClick={handleVoiceClick}><FontAwesomeIcon icon={faVolumeHigh} /></button>
+        <button disabled={text.length===0} className="btn btn-sm btn-outline-primary rounded-pill my-2" onClick={handleVoiceClick}><FontAwesomeIcon icon={faVolumeHigh} /></button>
         <button disabled={text.length===0} className="btn btn-sm btn-outline-primary rounded-pill mx-2" onClick={handleClick}>Convert to uppercase</button>
         <button disabled={text.length===0} className="btn btn-sm btn-outline-primary rounded-pill " onClick={handlecapClick}>Capitalize</button>
         <button disabled={text.length===0} className="btn btn-sm btn-outline-primary rounded-pill mx-2 my-2" onClick={handleanClick}>Convert to lowercase</button>
