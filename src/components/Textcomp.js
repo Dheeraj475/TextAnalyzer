@@ -1,4 +1,3 @@
-import '../App.css';
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck,faVolumeHigh  } from '@fortawesome/free-solid-svg-icons';
